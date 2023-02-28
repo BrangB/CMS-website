@@ -7,8 +7,8 @@ function LogInAndSignUp() {
   return (
     <div className='w-full h-screen flex justify-center items-center'>
         <Routes>
-            <Route path='/CMS-website/' element={<LoginForm />} />
-            <Route path='/CMS-website/SignUp' element={<SignUp />}/>
+            <Route path='/' element={<LoginForm />} />
+            <Route path='/SignUp' element={<SignUp />}/>
         </Routes>
     </div>
   )
