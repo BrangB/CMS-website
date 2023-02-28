@@ -3,6 +3,7 @@ import MainPage from "./components/MainPage";
 import { BrowserRouter } from "react-router-dom";
 import LogInAndSignUp from "./components/LogInAndSignUp";
 import { useSelector } from "react-redux";
+import LoginForm from "./components/LoginForm";
 
 function App() {
   const signIn = useSelector(state => state.LogIncondition)
@@ -10,7 +11,7 @@ function App() {
   return (
     <div className="bg-[#081D54]">
       <BrowserRouter>
-        {signIn ? <MainPage /> : <LogInAndSignUp />}
+        {signIn ? <MainPage /> : <LogInAndSignUp/>}
       </BrowserRouter>
     </div>
   );
