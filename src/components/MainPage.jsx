@@ -12,6 +12,7 @@ function MainPage() {
   const [navControl, setNavControl] = useState(false);
   const [open, setOpen] = useState(true)
   const [activeNav, setActiveNav] = useState(1);
+  const [ShowDefaultPage, setShowDefaultPage] = useState(true)
 
   const handlerNav = () => {
     setNavControl(navControl => !navControl)
@@ -25,7 +26,7 @@ function MainPage() {
               <FaTimes onClick={() => handlerNav()} />
             </div>
             <ul>
-              <Link to='/CMS-website/Dashboard' onClick={() => handlerNav()} ><li className='xsm:text-md sm:text-xl nav-title xsm:m-6 sm:m-8 cursor-pointer hover:text-[] font-bold text-[#585C65] text-center'>Dashboard</li></Link>
+              <Link to='/CMS-website/Dashboard' onClick={() => {handlerNav(); ShowDefaultPage(false)}} ><li className='xsm:text-md sm:text-xl nav-title xsm:m-6 sm:m-8 cursor-pointer hover:text-[] font-bold text-[#585C65] text-center'>Dashboard</li></Link>
             </ul>
           </div>
       </div>
@@ -37,7 +38,7 @@ function MainPage() {
             </div>
             <ul className='flex flex-col pt-8'>
                 <Link to='/CMS-website/Dashboard' >
-                <li className={`flex items-center justify-start mb-3 py-3 md:mb-4 md:py-2 xsm:px-3 rounded-lg duration-200  cursor-pointer  hover:bg-[#EBF0FE] hover:text-[#2e4694] ${activeNav === 2 ? "bg-[#EBF0FE] text-[#192755]" : 'text-[#ffffff]'}` } onClick={() => setActiveNav(2)}>
+                <li className={`flex items-center justify-start mb-3 py-3 md:mb-4 md:py-2 xsm:px-3 rounded-lg duration-200  cursor-pointer  hover:bg-[#EBF0FE] hover:text-[#2e4694] ${activeNav === 2 ? "bg-[#EBF0FE] text-[#192755]" : 'text-[#ffffff]'}` } onClick={() => {setActiveNav(2); setShowDefaultPage(false)}}>
                     <div className='md:mr-4 '><FaBook size={'20px'}/></div>
                     <p className={`xsm:text-sm lg:text-[1rem] duration-300 ${!open && "hidden"}`}>Dashboard</p>
                   </li>
@@ -48,6 +49,7 @@ function MainPage() {
           <Routes>
               <Route path='/CMS-website/Dashboard' element={<Dashboard />} />
           </Routes>
+          {ShowDefaultPage && <Dashboard />}
         </div>
     </div>
   )
