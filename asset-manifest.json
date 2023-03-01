@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/CMS-website/static/css/main.d1456e92.css",
-    "main.js": "/CMS-website/static/js/main.b6dd26c5.js",
+    "main.js": "/CMS-website/static/js/main.33ae624f.js",
     "index.html": "/CMS-website/index.html",
     "main.d1456e92.css.map": "/CMS-website/static/css/main.d1456e92.css.map",
-    "main.b6dd26c5.js.map": "/CMS-website/static/js/main.b6dd26c5.js.map"
+    "main.33ae624f.js.map": "/CMS-website/static/js/main.33ae624f.js.map"
   },
   "entrypoints": [
     "static/css/main.d1456e92.css",
-    "static/js/main.b6dd26c5.js"
+    "static/js/main.33ae624f.js"
   ]
 }
