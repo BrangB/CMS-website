@@ -79,7 +79,7 @@ function LoginForm() {
             </div>
             <div className='mt-2 flex flex-col items-center p-2'>
                 <hr className='bg-[#031D3F] border-0 w-28 h-[1px] m-4' />
-                <p className='text-center xsm:text-sm'>If you don't have account, <Link to='/SignUp'><span className='text-[#404aa3] hover:underline duration-200'>create an account</span></Link></p>
+                <p className='text-center xsm:text-sm'>If you don't have account, <Link to='/CMS-website/SignUp'><span className='text-[#404aa3] hover:underline duration-200'>create an account</span></Link></p>
             </div>
         </div>
     </Animation>

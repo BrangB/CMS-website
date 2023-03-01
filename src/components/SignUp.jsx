@@ -71,7 +71,7 @@ function SignUp() {
             </div>
             <div className='mt-2 flex flex-col items-center p-2'>
                 <hr className='bg-[#031D3F] border-0 w-28 h-[1px] m-4' />
-                <p className='text-center xsm:text-sm'>If you already have account, <Link to='/'><span className='text-[#404aa3] hover:underline duration-200'>Log In</span></Link></p>
+                <p className='text-center xsm:text-sm'>If you already have account, <Link to='/CMS-website/'><span className='text-[#404aa3] hover:underline duration-200'>Log In</span></Link></p>
             </div>
         </div>
         </Animation>
