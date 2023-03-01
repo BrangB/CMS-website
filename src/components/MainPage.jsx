@@ -26,7 +26,7 @@ function MainPage() {
               <FaTimes onClick={() => handlerNav()} />
             </div>
             <ul>
-              <Link to='/CMS-website/Dashboard' onClick={() => {handlerNav(); ShowDefaultPage(false)}} ><li className='xsm:text-md sm:text-xl nav-title xsm:m-6 sm:m-8 cursor-pointer hover:text-[] font-bold text-[#585C65] text-center'>Dashboard</li></Link>
+              <Link to='/CMS-website/Dashboard' onClick={() => {handlerNav(); setShowDefaultPage(false)}} ><li className='xsm:text-md sm:text-xl nav-title xsm:m-6 sm:m-8 cursor-pointer hover:text-[] font-bold text-[#585C65] text-center'>Dashboard</li></Link>
             </ul>
           </div>
       </div>
