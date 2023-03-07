@@ -46,7 +46,7 @@ function MainPage() {
                 </Link>
             </ul>
         </div>
-        <div className={` ${open ? 'lg:w-[78.9%]' : 'lg:w-[93%]' } xsm:w-full duration-300  xsm:h-screen xsm:flex flex-col  xsm:p-3 shadow-sm relative`}>
+        <div className={` ${open ? 'md:w-[78.9%] lg:w-[87%]' : 'md:w-[93%] lg:w-[96%]' } xsm:w-full duration-300  xsm:h-screen xsm:flex flex-col  xsm:p-3 shadow-sm relative`}>
           <Routes>
               <Route path='/CMS-website/Dashboard' element={<Dashboard />} />
           </Routes>
